@@ -10,25 +10,46 @@
   <!-- Navbar -->
   <header class="bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16">
-        <div class="flex">
-          <div class="flex-shrink-0">
-            <img class="h-8 w-auto" src="https://via.placeholder.com/100x40?text=ZENELI+GROUP" alt="Zeneli Group Logo">
-          </div>
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo section -->
+        <div class="flex-shrink-0">
+          <img class="h-12 w-auto" src="./assets/logo 1.png" alt="Zeneli Group Logo">
         </div>
-        <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+  
+        <!-- Navigation links and Contact Us button for larger screens -->
+        <div class="hidden sm:flex ml-auto items-center space-x-8">
           <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-500">Home</a>
           <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-500">About Us</a>
           <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-500">Service</a>
           <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-500">Portfolio</a>
-        </div>
-        <div class="ml-auto flex items-center">
+          <!-- Contact Us button -->
           <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact Us</a>
+        </div>
+  
+        <!-- Mobile menu button -->
+        <div class="sm:hidden flex items-center">
+          <button id="menu-toggle" class="text-gray-900 focus:outline-none">
+            <!-- Menu icon (Hamburger icon) -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
+  
+    <!-- Mobile dropdown menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-lg">
+      <div class="flex flex-col items-start space-y-2 px-4 py-2">
+        <a href="#" class="text-gray-900 block px-2 py-2">Home</a>
+        <a href="#" class="text-gray-900 block px-2 py-2">About Us</a>
+        <a href="#" class="text-gray-900 block px-2 py-2">Service</a>
+        <a href="#" class="text-gray-900 block px-2 py-2">Portfolio</a>
+        <a href="#" class="bg-blue-800 text-white block px-4 py-2 rounded-lg hover:bg-blue-700">Contact Us</a>
+      </div>
+    </div>
   </header>
-
+  
   <!-- Hero Section -->
   <section class="relative bg-blue-900 text-white py-20">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6 lg:px-8">
@@ -46,7 +67,7 @@
 
       <!-- Image -->
       <div class="relative">
-        <img class="rounded-lg shadow-lg" src="https://via.placeholder.com/600x400" alt="Construction Project Image">
+        <img class="rounded-lg shadow-lg" src="./assets/hero.png" alt="Construction Project Image">
       </div>
     </div>
   </section>
@@ -86,7 +107,7 @@
         
         <!-- Image with Play Icon -->
         <div class="relative">
-          <img class="rounded-lg shadow-lg" src="https://via.placeholder.com/600x400" alt="Construction Worker">
+          <img class="rounded-lg shadow-lg" src="./assets/why.png" alt="Construction Worker">
           <a href="#" class="absolute inset-0 flex items-center justify-center">
             <span class="bg-yellow-500 p-4 rounded-full text-white">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
@@ -120,7 +141,7 @@
         
         <!-- Background Image Section -->
         <div class="relative">
-          <img class="w-full h-auto rounded-lg" src="https://via.placeholder.com/600x300" alt="Ceiling Image">
+          <img class="w-full h-auto rounded-lg" src="./assets/banner.png"  alt="Ceiling Image">
         </div>
       </div>
     </div>
@@ -136,7 +157,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Card 1 -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
-          <img src="https://via.placeholder.com/150" alt="Painting" class="w-full h-40 object-cover rounded-lg mb-4">
+          <img src="./assets/service4.png" alt="Painting" class="w-full h-40 object-cover rounded-lg mb-4">
           <h3 class="text-lg font-semibold">Painting</h3>
           <p class="text-gray-600 mt-2">
             We offer professional painting services for interior and exterior projects with smooth, durable, and high-quality results.
@@ -145,7 +166,7 @@
   
         <!-- Card 2 -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
-          <img src="https://via.placeholder.com/150" alt="Building Restoration" class="w-full h-40 object-cover rounded-lg mb-4">
+          <img src="./assets//service2.png" alt="Building Restoration" class="w-full h-40 object-cover rounded-lg mb-4">
           <h3 class="text-lg font-semibold">Building Restoration</h3>
           <p class="text-gray-600 mt-2">
             This specialty includes full building and masonry restoration, ensuring your structure is restored to its original strength and aesthetic appeal.
@@ -154,7 +175,7 @@
   
         <!-- Card 3 -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
-          <img src="https://via.placeholder.com/150" alt="Plastering" class="w-full h-40 object-cover rounded-lg mb-4">
+          <img src="./assets/service3.png" alt="Plastering" class="w-full h-40 object-cover rounded-lg mb-4">
           <h3 class="text-lg font-semibold">Plastering</h3>
           <p class="text-gray-600 mt-2">
             Our specialists bring top-tier professional plastering services to any project, using the best techniques and materials for high-quality finishes.
@@ -163,7 +184,7 @@
   
         <!-- Card 4 -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
-          <img src="https://via.placeholder.com/150" alt="Drywall Installation" class="w-full h-40 object-cover rounded-lg mb-4">
+          <img src="./assets//service.png" alt="Drywall Installation" class="w-full h-40 object-cover rounded-lg mb-4">
           <h3 class="text-lg font-semibold">Drywall Installation</h3>
           <p class="text-gray-600 mt-2">
             We provide seamless drywall installation services, ensuring smooth and efficient installation for a durable and flawless result.
@@ -243,22 +264,23 @@
       <!-- Logos -->
       <div class="flex justify-center space-x-8">
         <!-- Logo 1 -->
-        <img src="https://via.placeholder.com/100x50?text=Logoipsum" alt="Logo 1" class="h-12">
+        <img src="./assets/plogo.png" alt="Logo 1" class="h-12">
         
         <!-- Logo 2 -->
-        <img src="https://via.placeholder.com/100x50?text=Logoipsum" alt="Logo 2" class="h-12">
+        <img src="./assets/plogo.png" alt="Logo 2" class="h-12">
         
         <!-- Logo 3 -->
-        <img src="https://via.placeholder.com/100x50?text=Logoipsum" alt="Logo 3" class="h-12">
+        <img src="./assets/plogo.png" alt="Logo 3" class="h-12">
         
         <!-- Logo 4 -->
-        <img src="https://via.placeholder.com/100x50?text=Logoipsum" alt="Logo 4" class="h-12">
+        <img src="./assets/plogo.png" alt="Logo 4" class="h-12">
         
         <!-- Logo 5 -->
-        <img src="https://via.placeholder.com/100x50?text=Logoipsum" alt="Logo 5" class="h-12">
+        <img src="./assets//plogo.png" alt="Logo 5" class="h-12">
       </div>
     </div>
   </section>
+
   <section class="bg-gray-100 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
@@ -278,12 +300,12 @@
           </p>
           <!-- Image Grid -->
           <div class="grid grid-cols-3 gap-4">
-            <img src="https://via.placeholder.com/150" alt="Portfolio Image 1" class="rounded-lg shadow-md">
-            <img src="https://via.placeholder.com/150" alt="Portfolio Image 2" class="rounded-lg shadow-md">
-            <img src="https://via.placeholder.com/150" alt="Portfolio Image 3" class="rounded-lg shadow-md">
-            <img src="https://via.placeholder.com/150" alt="Portfolio Image 4" class="rounded-lg shadow-md">
-            <img src="https://via.placeholder.com/150" alt="Portfolio Image 5" class="rounded-lg shadow-md">
-            <img src="https://via.placeholder.com/150" alt="Portfolio Image 6" class="rounded-lg shadow-md">
+            <img src="./assets/p1.png" alt="Portfolio Image 1" class="rounded-lg shadow-md">
+            <img src="./assets/p2.png" alt="Portfolio Image 2" class="rounded-lg shadow-md">
+            <img src="./assets/p3.png" alt="Portfolio Image 3" class="rounded-lg shadow-md">
+            <img src="./assets/p4.png" alt="Portfolio Image 4" class="rounded-lg shadow-md">
+            <img src="./assets//p5.png" alt="Portfolio Image 5" class="rounded-lg shadow-md">
+            <img src="./assets/p5.png" alt="Portfolio Image 6" class="rounded-lg shadow-md">
           </div>
   
           <!-- See All Button -->
@@ -299,7 +321,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Left Section: Logo and Description -->
         <div class="flex flex-col items-center md:items-start">
-          <img src="https://via.placeholder.com/100x50" alt="Zeneli Group Logo" class="mb-4">
+          <img src="./assets/logo 1.png" alt="Zeneli Group Logo" class="mb-4">
           <p class="text-center md:text-left">
             Zeneli Group Ensures High-Quality Results And Timely Completion Of Projects, Guaranteeing Customer Satisfaction And Maintaining The Highest Standards In Every Project They Undertake.
           </p>
@@ -331,4 +353,13 @@
   </footer>
         
 </body>
+<!-- Add this script at the bottom to handle the dropdown toggle -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 </html>
