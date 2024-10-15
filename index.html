@@ -5,361 +5,467 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zeneli Group</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="bg-gray-50">
   <!-- Navbar -->
-  <header class="bg-white shadow">
+  <header class="bg-white shadow"></header>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <!-- Logo section -->
-        <div class="flex-shrink-0">
-          <img class="h-12 w-auto" src="./assets/logo 1.png" alt="Zeneli Group Logo">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo section -->
+            <div class="flex-shrink-0">
+                <img class="h-12 w-auto" src="./assets/logo 1.png" alt="Zeneli Group Logo">
+            </div>
+
+            <!-- Navigation links and Contact Us button for larger screens -->
+            <div class="hidden sm:flex ml-auto items-center space-x-8">
+                <!-- Home link - Active by default -->
+                <a href="#" id="home-link" class="active text-blue-600 inline-flex items-center px-1 pt-1">Home</a>
+                <a href="#" id="about-link" class="text-gray-900 inline-flex items-center px-1 pt-1">About Us</a>
+                <a href="#" id="service-link" class="text-gray-900 inline-flex items-center px-1 pt-1">Service</a>
+                <a href="#" id="portfolio-link" class="text-gray-900 inline-flex items-center px-1 pt-1">Portfolio</a>
+                <!-- Contact Us button -->
+                <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact Us</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="sm:hidden flex items-center">
+                <button id="menu-toggle" class="text-gray-900 focus:outline-none">
+                    <!-- Menu icon (Hamburger icon) -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
         </div>
-  
-        <!-- Navigation links and Contact Us button for larger screens -->
-        <div class="hidden sm:flex ml-auto items-center space-x-8">
-          <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-500">Home</a>
-          <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-500">About Us</a>
-          <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-500">Service</a>
-          <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-500">Portfolio</a>
-          <!-- Contact Us button -->
-          <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact Us</a>
-        </div>
-  
-        <!-- Mobile menu button -->
-        <div class="sm:hidden flex items-center">
-          <button id="menu-toggle" class="text-gray-900 focus:outline-none">
-            <!-- Menu icon (Hamburger icon) -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
-  
+
     <!-- Mobile dropdown menu (hidden by default) -->
     <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-lg">
-      <div class="flex flex-col items-start space-y-2 px-4 py-2">
-        <a href="#" class="text-gray-900 block px-2 py-2">Home</a>
-        <a href="#" class="text-gray-900 block px-2 py-2">About Us</a>
-        <a href="#" class="text-gray-900 block px-2 py-2">Service</a>
-        <a href="#" class="text-gray-900 block px-2 py-2">Portfolio</a>
-        <a href="#" class="bg-blue-800 text-white block px-4 py-2 rounded-lg hover:bg-blue-700">Contact Us</a>
-      </div>
-    </div>
-  </header>
-  
-  <!-- Hero Section -->
-  <section class="relative bg-blue-900 text-white py-20">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6 lg:px-8">
-      <!-- Text content -->
-      <div>
-        <h1 class="text-4xl font-bold">Building With Precision, Realizing With Quality</h1>
-        <p class="mt-4 text-lg font-medium">
-          <strong>Zeneli Group</strong> delivers comprehensive construction services from painting, restoration, plastering, to drywall installation. With a dedicated team of experts, we are committed to completing projects on time with superior results. Trust your construction needs to us for long-lasting and satisfying results.
-        </p>
-        <div class="mt-8 space-x-4">
-          <a href="#" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600">Consultation Now</a>
-          <a href="#" class="inline-block border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">See Our Projects</a>
+        <div class="flex flex-col items-start space-y-2 px-4 py-2">
+            <a href="#" class="active text-blue-600 block px-2 py-2">Home</a>
+            <a href="#" class="text-gray-900 block px-2 py-2">About Us</a>
+            <a href="#" class="text-gray-900 block px-2 py-2">Service</a>
+            <a href="#" class="text-gray-900 block px-2 py-2">Portfolio</a>
+            <a href="#" class="bg-blue-800 text-white block px-4 py-2 rounded-lg hover:bg-blue-700">Contact Us</a>
         </div>
-      </div>
+    </div>
+</header>
 
-      <!-- Image -->
-      <div class="relative">
-        <img class="rounded-lg shadow-lg" src="./assets/hero.png" alt="Construction Project Image">
-      </div>
-    </div>
-  </section>
-  <section class="bg-gray-50 py-16">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        
-        <!-- Text Content -->
-        <div>
-          <h3 class="text-blue-900 font-semibold">Why Choose Us</h3>
-          <h2 class="text-3xl font-bold text-gray-900 mt-2">
-            We conduct all business with the utmost integrity and excellence, adhering to the highest standards in every project we undertake.
-          </h2>
-          <p class="mt-4 text-gray-700 text-lg">
-            At <strong>Zeneli Group</strong>, we offer more than just construction services — we deliver excellence. From painting, restoration, plastering, to drywall installation, our team of skilled experts ensures every project is completed on time and with the highest quality standards. We are committed to providing durable and satisfying results that stand the test of time.
+<script>
+    // Select all menu links
+    const menuLinks = document.querySelectorAll('.sm\\:flex a, #mobile-menu a');
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Remove active class from all links
+            menuLinks.forEach(item => {
+                item.classList.remove('text-blue-600');
+                item.classList.add('text-gray-900');
+            });
+
+            // Add active class to the clicked link
+            this.classList.add('text-blue-600');
+            this.classList.remove('text-gray-900');
+        });
+    });
+</script>
+  
+
+  <!-- Home Section (Shown by Default) -->
+  <div id="home-section">
+    <!-- Hero Section -->
+    <section class="relative bg-blue-900 text-white ">
+      <div class="relative w-full grid grid-cols-1 md:grid-cols-2 items-center h-[500px]">
+        <!-- Text content -->
+        <div class="flex flex-col justify-center px-6 lg:px-8 z-10 m-16">
+          <h1 class="text-4xl font-bold text-white">Building With Precision, Realizing With Quality</h1>
+          <p class="mt-4 text-lg font-medium text-white">
+            <strong>Zeneli Group</strong> delivers comprehensive construction services from painting, restoration, plastering, to drywall installation. With a dedicated team of experts, we are committed to completing projects on time with superior results. Trust your construction needs to us for long-lasting and satisfying results.
           </p>
-          <!-- Stats -->
-          <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            <div class="text-center">
-              <p class="text-4xl font-bold text-blue-900">79+</p>
-              <p class="mt-1 text-lg text-gray-600">Project Complete</p>
-            </div>
-            <div class="text-center">
-              <p class="text-4xl font-bold text-blue-900">24+</p>
-              <p class="mt-1 text-lg text-gray-600">Expert Worker</p>
-            </div>
-            <div class="text-center">
-              <p class="text-4xl font-bold text-blue-900">100+</p>
-              <p class="mt-1 text-lg text-gray-600">Happy Client</p>
-            </div>
-            <div class="text-center">
-              <p class="text-4xl font-bold text-blue-900">120+</p>
-              <p class="mt-1 text-lg text-gray-600">Running Project</p>
-            </div>
+          <div class="mt-8 space-x-4">
+            <a href="#" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 mt-4">Consultation Now</a>
+            <a href="#" class="inline-block border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 mt-4">See Our Projects</a>
           </div>
         </div>
-        
-        <!-- Image with Play Icon -->
-        <div class="relative">
-          <img class="rounded-lg shadow-lg" src="./assets/why.png" alt="Construction Worker">
-          <a href="#" class="absolute inset-0 flex items-center justify-center">
-            <span class="bg-yellow-500 p-4 rounded-full text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1.707-4.707a1 1 0 010-1.414L11.586 10 8.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-              </svg>
-            </span>
-          </a>
+    
+        <!-- Image Section with clip-path -->
+        <div class="relative h-full w-full">
+          <img src="./assets/hero.png" alt="Construction Project Image" class="absolute top-0 right-0 bottom-0 w-full h-full object-cover"
+               style="clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);">
         </div>
-  
-      </div>
-    </div>
-  </section>
-  <section class="relative bg-blue-900 text-white py-10">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-        <!-- Text and Button Section -->
-        <div>
-          <h2 class="text-2xl md:text-3xl font-bold">
-            Have A Project In Mind? Contact Us Today For A Free Consultation And Let’s Make It Happen!
-          </h2>
-          <div class="mt-6">
-            <a href="#"
-              class="inline-flex items-center bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out">
-              Consultation Now
-              <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1.707-4.707a1 1 0 010-1.414L11.586 10 8.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Background Image Section -->
-        <div class="relative">
-          <img class="w-full h-auto rounded-lg" src="./assets/banner.png"  alt="Ceiling Image">
+    
+        <!-- Pattern on the blue side -->
+        <div class="absolute inset-0 h-full w-full z-0"
+             style="clip-path: polygon(0 0, 20% 0%, 0% 50%, 10% 100%, 0 100%);
+                    background-image: url('./assets/pattern.png');
+                    background-repeat: no-repeat;
+                    background-position: right top;
+                    background-size: contain;
+                    opacity: 1;">
         </div>
       </div>
-    </div>
-  </section>
-  <section class="bg-gray-50 py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold mb-6">
-        We Don’t Just Build Projects, We Shape Your Future With Trust And Excellence
-      </h2>
-      <p class="text-gray-600 mb-12">
-        At Zeneli Group, we bring decades of expertise and an unwavering commitment to excellence in every construction project. Our specialty lies in transforming spaces through precision painting, meticulous restoration, flawless plastering, and seamless drywall installation.
-      </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Card 1 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
-          <img src="./assets/service4.png" alt="Painting" class="w-full h-40 object-cover rounded-lg mb-4">
-          <h3 class="text-lg font-semibold">Painting</h3>
-          <p class="text-gray-600 mt-2">
-            We offer professional painting services for interior and exterior projects with smooth, durable, and high-quality results.
-          </p>
-        </div>
-  
-        <!-- Card 2 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
-          <img src="./assets//service2.png" alt="Building Restoration" class="w-full h-40 object-cover rounded-lg mb-4">
-          <h3 class="text-lg font-semibold">Building Restoration</h3>
-          <p class="text-gray-600 mt-2">
-            This specialty includes full building and masonry restoration, ensuring your structure is restored to its original strength and aesthetic appeal.
-          </p>
-        </div>
-  
-        <!-- Card 3 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
-          <img src="./assets/service3.png" alt="Plastering" class="w-full h-40 object-cover rounded-lg mb-4">
-          <h3 class="text-lg font-semibold">Plastering</h3>
-          <p class="text-gray-600 mt-2">
-            Our specialists bring top-tier professional plastering services to any project, using the best techniques and materials for high-quality finishes.
-          </p>
-        </div>
-  
-        <!-- Card 4 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
-          <img src="./assets//service.png" alt="Drywall Installation" class="w-full h-40 object-cover rounded-lg mb-4">
-          <h3 class="text-lg font-semibold">Drywall Installation</h3>
-          <p class="text-gray-600 mt-2">
-            We provide seamless drywall installation services, ensuring smooth and efficient installation for a durable and flawless result.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="bg-gray-50 py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <!-- Title Section -->
-      <h2 class="text-3xl font-bold mb-6">
-        100+ Clients Satisfied with Every Project We Execute!
-      </h2>
-      <p class="text-gray-600 mb-12">
-        Zeneli Group completely transformed our office space into a more vibrant one! The process was very smooth, and the results are amazing. We are very satisfied!
-      </p>
-  
-      <!-- Testimonials Section -->
-      <div class="flex justify-center space-x-8">
-        <!-- Testimonial 1 -->
-        <div class="bg-white shadow-md rounded-lg p-6 max-w-sm">
-          <p class="text-gray-600">
-            Zeneli Group completely transformed our office space into a more vibrant one! The process was very smooth, and the results are amazing. We are very satisfied!
-          </p>
-          <div class="mt-4 flex items-center">
-            <img src="https://via.placeholder.com/50" alt="Andi Rahman" class="w-12 h-12 rounded-full">
-            <div class="ml-4 text-left">
-              <h3 class="font-bold text-gray-800">Andi Rahman</h3>
-              <p class="text-gray-600 text-sm">Project Manager</p>
+    
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="bg-gray-50 py-16">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Image with Play Icon (on top for small screens) -->
+            <div class="relative md:order-2 order-1">
+                <img class="rounded-lg shadow-lg w-full" src="./assets/why.png" alt="Construction Worker">
+                <a href="#" class="absolute inset-0 flex items-center justify-center">
+                    <span class="p-4 text-white">
+                        <img src="./assets/play.png" alt="Play Button" class="h-20 w-20">
+                    </span>
+                </a>
             </div>
-          </div>
-        </div>
-  
-        <!-- Testimonial 2 -->
-        <div class="bg-white shadow-md rounded-lg p-6 max-w-sm">
-          <p class="text-gray-600">
-            I am very impressed with the professionalism of the Zeneli Group team. They restored my old house to its original condition with amazing details!
-          </p>
-          <div class="mt-4 flex items-center">
-            <img src="https://via.placeholder.com/50" alt="Siti Nurhaliza" class="w-12 h-12 rounded-full">
-            <div class="ml-4 text-left">
-              <h3 class="font-bold text-gray-800">Siti Nurhaliza</h3>
-              <p class="text-gray-600 text-sm">Home Owner</p>
+    
+            <!-- Text Content (below for small screens) -->
+            <div class="md:order-1 order-2">
+                <h3 class="text-blue-900 font-semibold">Why Choose Us</h3>
+                <h2 class="text-3xl font-bold text-gray-900 mt-2">
+                    We conduct all business with the utmost integrity and excellence, adhering to the highest standards in every project we undertake.
+                </h2>
+                <p class="mt-4 text-gray-700 text-lg">
+                    At <strong>Zeneli Group</strong>, we offer more than just construction services — we deliver excellence. From painting, restoration, plastering, to drywall installation, our team of skilled experts ensures every project is completed on time and with the highest quality standards.
+                </p>
+    
+                <!-- Stats Grid with Alignment -->
+                <div class="mt-4 flex justify-start space-x-8">
+                    <div class="text-left">
+                        <p class="text-4xl font-bold text-blue-900">79+</p>
+                        <p class="mt-1 text-lg text-gray-600">Project Complete</p>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-4xl font-bold text-blue-900">24+</p>
+                        <p class="mt-1 text-lg text-gray-600">Expert Worker</p>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-4xl font-bold text-blue-900">100+</p>
+                        <p class="mt-1 text-lg text-gray-600">Happy Client</p>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-4xl font-bold text-blue-900">120+</p>
+                        <p class="mt-1 text-lg text-gray-600">Running Project</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-  
-        <!-- Testimonial 3 -->
-        <div class="bg-white shadow-md rounded-lg p-6 max-w-sm">
-          <p class="text-gray-600">
-            The drywall installation by Zeneli Group was very quick and neat. Their service is highly skilled, and we couldn't be happier with the results.
-          </p>
-          <div class="mt-4 flex items-center">
-            <img src="https://via.placeholder.com/50" alt="Budi Santoso" class="w-12 h-12 rounded-full">
-            <div class="ml-4 text-left">
-              <h3 class="font-bold text-gray-800">Budi Santoso</h3>
-              <p class="text-gray-600 text-sm">Architect</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Slider Dots (for future slider functionality) -->
-      <div class="mt-8 flex justify-center space-x-2">
-        <span class="inline-block w-3 h-3 bg-blue-600 rounded-full"></span>
-        <span class="inline-block w-3 h-3 bg-gray-300 rounded-full"></span>
-        <span class="inline-block w-3 h-3 bg-gray-300 rounded-full"></span>
-      </div>
     </div>
-  </section>
-  <section class="bg-blue-800 py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <!-- Title -->
-      <h2 class="text-white text-lg font-semibold mb-8">Brand Use Our Service</h2>
+    
+    <style>
+        /* Remove default margin from the counters */
+        .flex > div {
+            margin: 0; /* Ensure no margin around counters */
+            text-align: left; /* Align text to the left for counters */
+        }
+    </style>
       
-      <!-- Logos -->
-      <div class="flex justify-center space-x-8">
-        <!-- Logo 1 -->
-        <img src="./assets/plogo.png" alt="Logo 1" class="h-12">
-        
-        <!-- Logo 2 -->
-        <img src="./assets/plogo.png" alt="Logo 2" class="h-12">
-        
-        <!-- Logo 3 -->
-        <img src="./assets/plogo.png" alt="Logo 3" class="h-12">
-        
-        <!-- Logo 4 -->
-        <img src="./assets/plogo.png" alt="Logo 4" class="h-12">
-        
-        <!-- Logo 5 -->
-        <img src="./assets//plogo.png" alt="Logo 5" class="h-12">
-      </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section class="relative bg-blue-900 text-white overflow-hidden">
+      <div class="relative h-[300px] bg-blue-900 text-white">
+        <div class="w-full mx-auto grid grid-cols-2 h-full p-0 m-0">
+            <!-- Text Section with padding -->
+            <div class="flex flex-col justify-center pl-12 m-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Have A Project In Mind? Contact Us Today For A Free Consultation And Let's Make It Happen!</h2>
+                <div class="mt-6">
+                    <a href="#"
+                       class="inline-flex items-center bg-yellow-500 hover:bg-yellow-600 text-white font-bold rounded-full transition duration-300 ease-in-out px-4 py-2">
+                        Consultation Now
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1.707-4.707a1 1 0 010-1.414L11.586 10 8.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Image Section with increased width and diagonal cut -->
+            <div class="relative h-full col-span-1">
+                <img src="./assets/banner.png" alt="Ceiling Image"
+                     class="absolute inset-0 h-full w-full object-cover"
+                     style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%); margin: 0; padding: 0;">
+            </div>
+        </div>
     </div>
+    
   </section>
 
-  <section class="bg-gray-100 py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
-        <!-- Left Side Buttons -->
-        <div class="col-span-1 space-y-4">
-          <h2 class="text-2xl font-semibold">Our <span class="text-blue-600">Portfolio</span></h2>
-          <button class="bg-blue-600 text-white w-full py-2 px-4 rounded-lg">Drywall Installation</button>
-          <button class="bg-white border border-gray-300 text-gray-700 w-full py-2 px-4 rounded-lg hover:bg-gray-200">Building Restoration</button>
-          <button class="bg-white border border-gray-300 text-gray-700 w-full py-2 px-4 rounded-lg hover:bg-gray-200">Plastering</button>
-          <button class="bg-white border border-gray-300 text-gray-700 w-full py-2 px-4 rounded-lg hover:bg-gray-200">Painting</button>
-        </div>
-  
-        <!-- Right Side Content -->
-        <div class="col-span-4">
-          <p class="text-gray-600 mb-6">
-            Discover The Artistry And Craftsmanship Of Zeneli Group Through Our Diverse Portfolio. From Elegant Residential Renovations To Innovative Commercial Projects, Each Showcase Our Expertise In Painting, Restoration, Plastering, And Drywall Installation.
+ <!-- services-->
+ <section class=" bg-gray-50 py-16 ">
+  <div class="max-w-5xl mx-auto ">
+    <h2 class="text-3xl font-bold text-center mb-6">
+        We Don’t Just Build Projects, We Shape Your Future With Trust And Excellence
+    </h2>
+    <p class="text-center mb-12 text-gray-700 w-full lg:w-3/4 mx-auto">
+        At Zeneli Group, We Bring Decades Of Expertise And An Unwavering Commitment To Excellence In Every Construction Project. Our Specialty Lies In Transforming Spaces Through Precision Painting, Meticulous Restoration, Flawless Plastering, And Seamless Drywall Installation.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-8 gap-x-0"> <!-- Vertical gap 8, horizontal gap 0 -->
+      <!-- First Column -->
+      <div class="bg-white rounded-lg shadow-md p-4 max-w-xs mx-auto"> 
+          <img src="./assets/service4.png" alt="Painting Image" class="rounded-lg mb-4 w-full h-48 object-cover"> 
+          <h3 class="text-xl font-semibold">Painting</h3>
+          <p class="mt-2 text-gray-600">
+              We offer professional painting services for interiors and exteriors with smooth, durable, and high-quality results.
           </p>
-          <!-- Image Grid -->
-          <div class="grid grid-cols-3 gap-4">
-            <img src="./assets/p1.png" alt="Portfolio Image 1" class="rounded-lg shadow-md">
-            <img src="./assets/p2.png" alt="Portfolio Image 2" class="rounded-lg shadow-md">
-            <img src="./assets/p3.png" alt="Portfolio Image 3" class="rounded-lg shadow-md">
-            <img src="./assets/p4.png" alt="Portfolio Image 4" class="rounded-lg shadow-md">
-            <img src="./assets//p5.png" alt="Portfolio Image 5" class="rounded-lg shadow-md">
-            <img src="./assets/p5.png" alt="Portfolio Image 6" class="rounded-lg shadow-md">
-          </div>
+      </div>
   
-          <!-- See All Button -->
-          <div class="mt-6 text-center">
-            <button class="bg-yellow-500 text-white py-2 px-6 rounded-lg hover:bg-yellow-600">See All</button>
+      <div class="bg-white rounded-lg shadow-md p-4 max-w-xs mx-auto"> 
+          <img src="./assets/service3.png" alt="Restoration Image" class="rounded-lg mb-4 w-full h-48 object-cover"> 
+          <h3 class="text-xl font-semibold">Building Restoration</h3>
+          <p class="mt-2 text-gray-600">
+              We specialize in restoring old buildings with modern techniques, ensuring structural strength and aesthetic appearance are maintained.
+          </p>
+      </div>
+  
+      <!-- Second Column -->
+      <div class="bg-white rounded-lg shadow-md p-4 max-w-xs mx-auto"> 
+          <img src="./assets/service2.png" alt="Plastering Image" class="rounded-lg mb-4 w-full h-48 object-cover"> 
+          <h3 class="text-xl font-semibold">Plastering</h3>
+          <p class="mt-2 text-gray-600">
+              We specialize in neat and professional plastering installations, using the latest techniques and high-quality materials.
+          </p>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-md p-4 max-w-xs mx-auto"> 
+          <img src="./assets/service.png" alt="Drywall Image" class="rounded-lg mb-4 w-full h-48 object-cover"> 
+          <h3 class="text-xl font-semibold">Drywall Installation</h3>
+          <p class="mt-2 text-gray-600">
+              We provide a fast and high-quality drywall installation service, ensuring each panel is installed with precision for a smooth and neat result.
+          </p>
+      </div>
+    </div>
+</div>
+
+<style>
+    /* Ensure no space around the image */
+    .relative img {
+        display: block; /* Remove space below the image */
+        object-fit: cover; /* Maintain aspect ratio */
+        max-height: none; /* Allow the image to exceed its container height */
+    }
+</style>
+
+
+</section>
+    <!-- Testimonials Section -->
+    <section class="bg-gray-50 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Title Section -->
+        <h2 class="text-3xl font-bold mb-6 text-left">
+            100+ Clients Satisfied<br />
+            with Every Project<br />
+            We Execute!
+        </h2>
+    
+        <!-- Testimonials Section -->
+        <div class="flex justify-center space-x-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white shadow-md rounded-lg p-6 max-w-sm text-center flex flex-col items-center">
+                <p class="text-black mb-4 text-center">Zeneli Group completely transformed our office space into a more vibrant one! The process was very smooth, and the results are amazing. We are very satisfied!</p>
+                <div class="mt-4 flex items-center justify-center">
+                    <img src="./assets/user1.png" alt="Andi Rahman" class="w-13 h-13 rounded-full">
+                    <div class="ml-4 text-left">
+                        <h3 class="font-bold text-black ml-2">Andi Rahman</h3>
+                        <p class="text-black text-sm ml-2">Project Manager</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Testimonial 2 -->
+            <div class="bg-white shadow-md rounded-lg p-6 max-w-sm text-center flex flex-col items-center">
+                <p class="text-black mb-4 text-center">I am very impressed with the professionalism of the Zeneli Group team. They restored my old house to its original condition with amazing details!</p>
+                <div class="mt-4 flex items-center justify-center">
+                    <img src="./assets/user2.png" alt="Siti Nurhaliza" class="w-13 h-13 rounded-full">
+                    <div class="ml-4 text-left">
+                        <h3 class="font-bold text-black ml-2">Siti Nurhaliza</h3>
+                        <p class="text-black text-sm ml-2">Home Owner</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Testimonial 3 -->
+            <div class="bg-white shadow-md rounded-lg p-6 max-w-sm text-center flex flex-col items-center">
+                <p class="text-black mb-4 text-center">The drywall installation by Zeneli Group was very quick and neat. Their service is highly skilled, and we couldn't be happier with the results.</p>
+                <div class="mt-4 flex items-center justify-center">
+                    <img src="./assets/user3.png" alt="Budi Santoso" class="w-13 h-13 rounded-full">
+                    <div class=" text-left">
+                        <h3 class="font-bold text-black ml-2">Budi Santoso</h3>
+                        <p class="text-black text-sm ml-2">Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Slider Section -->
+        <div class="mt-6 flex justify-center space-x-2">
+            <!-- Rectangle slider indicators -->
+            <div class="w-12 h-2 rounded-full" style="background-color: #003366;"></div>
+            <div class="w-12 h-2 bg-gray-400 rounded-full"></div>
+            <div class="w-12 h-2 bg-gray-400 rounded-full"></div>
+        </div>
+    </div>
+    
+    </section>
+
+    <!-- Brand Section -->
+    <section class=" py-8" style="background-color: #003366;" >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Title aligned to the left -->
+        <h2 class="text-white text-lg font-semibold mb-8 text-left">Brand Use Our Service</h2>
+        
+        <!-- Logos with a smaller width and height -->
+        <div class="flex justify-center space-x-8">
+            <img src="./assets/plogo.png" alt="Logo 1" class="w-[30px] h-[30px] object-contain">
+            <img src="./assets/plogo.png" alt="Logo 2" class="w-[30px] h-[30px] object-contain">
+            <img src="./assets/plogo.png" alt="Logo 3" class="w-[30px] h-[30px] object-contain">
+            <img src="./assets/plogo.png" alt="Logo 4" class="w-[30px] h-[30px] object-contain">
+            <img src="./assets/plogo.png" alt="Logo 5" class="w-[30px] h-[30px] object-contain">
+        </div>
+    </div>
+    
+    
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-10 gap-12"> <!-- Increased gap between sections -->
+            <!-- New Left Section (for buttons) -->
+            <div class="col-span-2 lg:col-span-3">
+                <h2 class="text-2xl font-semibold">Our <span style="color: #003366;">Portfolio</span></h2>
+                <div class="space-y-4">
+                    <button class=" text-white w-full py-2 px-4 rounded-lg" style="background-color: #003366;">Drywall Installation</button>
+                    <button class="bg-white border border-gray-300 w-full py-2 px-4 rounded-lg hover:bg-gray-200">Building Restoration</button>
+                    <button class="bg-white border border-gray-300 w-full py-2 px-4 rounded-lg hover:bg-gray-200">Plastering</button>
+                    <button class="bg-white border border-gray-300 w-full py-2 px-4 rounded-lg hover:bg-gray-200">Painting</button>
+                </div>
+            </div>
+    
+            <!-- Right Section (images layout) -->
+            <div class="col-span-8 lg:col-span-7">
+              <div class="flex flex-col items-start">
+                  <!-- Adjusted paragraph width -->
+                  <p class="text-gray-600 mb-4 max-w-2xl text-justify"> <!-- Increased max width -->
+                      Discover The Artistry And Craftsmanship Of Zeneli Group Through Our Diverse Portfolio. From Elegant Residential Renovations To Impressive Commercial Projects, Each Showcase Our Expertise In Painting, Restoration, Plastering, And Drywall Installation.
+                  </p>
+          
+                  <!-- Flex layout for the image arrangement -->
+                  <div class="flex justify-start items-start gap-2">
+                      <!-- Left side (2 stacked images) -->
+                      <div class="flex flex-col gap-4">
+                          <img src="./assets/p1.png" alt="Portfolio Image 1" class="rounded-lg shadow-md w-40 h-auto">
+                          <img src="./assets/p2.png" alt="Portfolio Image 2" class="rounded-lg shadow-md w-40 h-auto">
+                      </div>
+          
+                      <!-- Center (one large image) -->
+                      <div>
+                          <img src="./assets/p3.png" alt="Portfolio Image 3" class="rounded-lg shadow-md w-60 h-48 object-cover">
+                      </div>
+          
+                      <!-- Right side (2 stacked images) -->
+                      <div class="flex flex-col gap-4">
+                          <img src="./assets/p4.png" alt="Portfolio Image 4" class="rounded-lg shadow-md w-40 h-auto">
+                          <img src="./assets/p5.png" alt="Portfolio Image 5" class="rounded-lg shadow-md w-40 h-auto">
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- Centered Button placed under the image section -->
+              <div class="mt-8 flex justify-center"> <!-- Changed to flex with justify-center -->
+                  <button class="bg-white text-yellow-600 border border-yellow-600 py-2 px-6 rounded-xl hover:bg-yellow-600 hover:text-white flex items-center">
+                      See All 
+                      <i class="fas fa-arrow-right ml-2"></i> <!-- Font Awesome arrow icon -->
+                  </button>
+              </div>
+          </div>
+        </div>
+    </div>
+      
+    
+    </section>
+  </div>
+
+  <!-- About Us Section (Hidden by Default) -->
+  <div id="about-section" class="hidden">
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center">Welcome to Zeneli Group</h2>
+        <p class="text-lg text-center mt-4">25 Years of Experience in the Construction Industry</p>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Image -->
+          <div>
+            <img src="./assets/about-us.png" alt="About Us" class="w-full h-auto rounded-lg shadow-lg">
+          </div>
+          <!-- Text Content -->
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900">Our Expertise</h3>
+            <p class="mt-4 text-gray-700">With 25 years of experience, Zeneli Group is proud to offer top-notch construction services across a wide range of specialties. Our team is dedicated to providing superior craftsmanship, timely completion, and unparalleled customer satisfaction.</p>
+            <a href="#" class="mt-6 inline-block bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-600">Consultation Now</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
+  <!-- Footer (Remains the Same) -->
   <footer class="bg-blue-900 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Left Section: Logo and Description -->
-        <div class="flex flex-col items-center md:items-start">
-          <img src="./assets/logo 1.png" alt="Zeneli Group Logo" class="mb-4">
-          <p class="text-center md:text-left">
-            Zeneli Group Ensures High-Quality Results And Timely Completion Of Projects, Guaranteeing Customer Satisfaction And Maintaining The Highest Standards In Every Project They Undertake.
-          </p>
-        </div>
-  
-        <!-- Middle Section: Navigation Links -->
-        <div class="text-center md:text-left">
-          <h3 class="font-semibold mb-4">More to Know</h3>
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:underline">Home</a></li>
-            <li><a href="#" class="hover:underline">About Us</a></li>
-            <li><a href="#" class="hover:underline">Service</a></li>
-            <li><a href="#" class="hover:underline">Portfolio</a></li>
-          </ul>
-        </div>
-  
-        <!-- Right Section: Contact Information -->
-        <div class="text-center md:text-left">
-          <h3 class="font-semibold mb-4">Company Info</h3>
-          <ul class="space-y-2">
-            <li>Zeneli Group</li>
-            <li><a href="mailto:support@zeneligroup.com" class="hover:underline">Support@zeneligroup.com</a></li>
-            <li>+021 1234 7896</li>
-            <li>Company address details</li>
-          </ul>
-        </div>
+          <!-- Left Section: Logo and Description -->
+          <div class="flex flex-col items-center md:items-start space-y-4">
+              <img src="./assets/logo 1.png" alt="Zeneli Group Logo" class="mb-4">
+              <p class="text-center md:text-left">
+                  Zeneli Group Ensures High-Quality Results And Timely Completion Of Projects, Guaranteeing Customer Satisfaction And Maintaining The Highest Standards In Every Project They Undertake.
+              </p>
+          </div>
+          <!-- Middle Section: Navigation Links -->
+          <div class="text-center md:text-left space-y-4">
+              <h3 class="font-semibold mb-2">More to Know</h3>
+              <ul class="space-y-2">
+                  <li><a href="#" class="hover:underline">Home</a></li>
+                  <li><a href="#" class="hover:underline">About Us</a></li>
+                  <li><a href="#" class="hover:underline">Service</a></li>
+                  <li><a href="#" class="hover:underline">Portfolio</a></li>
+              </ul>
+          </div>
+          <!-- Right Section: Contact Information -->
+          <div class="text-center md:text-left space-y-4">
+              <h3 class="font-semibold mb-2">Company Info</h3>
+              <ul class="space-y-2">
+                  <li>Zeneli Group</li>
+                  <li><a href="mailto:support@zeneligroup.com" class="hover:underline">Support@zeneligroup.com</a></li>
+                  <li>+021 1234 7896</li>
+                  <li>Company address details</li>
+              </ul>
+          </div>
       </div>
-    </div>
+  </div>
+  
   </footer>
-        
-</body>
-<!-- Add this script at the bottom to handle the dropdown toggle -->
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
 
-  menuToggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+<!-- Script to toggle between Home and About -->
+<script>
+  const homeLink = document.getElementById("home-link");
+  const aboutLink = document.getElementById("about-link");
+  const homeSection = document.getElementById("home-section");
+  const aboutSection = document.getElementById("about-section");
+
+  homeLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    homeSection.classList.remove("hidden");
+    aboutSection.classList.add("hidden");
+  });
+
+  aboutLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    homeSection.classList.add("hidden");
+    aboutSection.classList.remove("hidden");
   });
 </script>
+</body>
 </html>
