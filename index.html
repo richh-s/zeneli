@@ -392,59 +392,183 @@
 
   <!-- About Us Section (Hidden by Default) -->
   <div id="about-section" class="hidden">
-    <section class="py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center">Welcome to Zeneli Group</h2>
-        <p class="text-lg text-center mt-4">25 Years of Experience in the Construction Industry</p>
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Image -->
-          <div>
-            <img src="./assets/about-us.png" alt="About Us" class="w-full h-auto rounded-lg shadow-lg">
-          </div>
-          <!-- Text Content -->
-          <div>
-            <h3 class="text-2xl font-bold text-gray-900">Our Expertise</h3>
-            <p class="mt-4 text-gray-700">With 25 years of experience, Zeneli Group is proud to offer top-notch construction services across a wide range of specialties. Our team is dedicated to providing superior craftsmanship, timely completion, and unparalleled customer satisfaction.</p>
-            <a href="#" class="mt-6 inline-block bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-600">Consultation Now</a>
-          </div>
+    <section class="relative">
+        <div class="max-w-full mx-auto">
+          <img src="./assets/carousel.png" alt="Workers discussing a project" class="w-full h-auto object-cover">
         </div>
-      </div>
+      </section>
+      
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-1 items-center">
+              <!-- Left Section (Image with Play Button and Tilted Yellow Background) -->
+              <div class="relative flex justify-center items-center">
+                <!-- Tilted Yellow Background aligned with the image -->
+                <div class="absolute transform -rotate-6 bg-yellow-400 w-80 h-80 rounded-lg z-0" style="top: -13px; left: 145px;"></div>
+                <!-- Image aligned center -->
+                <img src="./assets/about 1.png" alt="About Us" class="relative z-10 w-80 h-auto rounded-lg shadow-lg">
+                <!-- Play Button centered over the image -->
+                <img src="./assets/play.png" alt="Play Button" class="absolute w-16 h-16 z-20" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              </div>
+          
+              <!-- Right Section (Text Content) -->
+              <div class="text-left">
+                <h3 class="text-sm font-semibold text-gray-700 uppercase">Welcome To Zeneli Group</h3>
+                <h2 class="text-4xl font-bold text-gray-900 mt-2">25 Years Experience</h2>
+                <p class="mt-4 text-gray-700">
+                  Lorem Ipsum Dolor Sit Amet Consectetur. Mattis Pulvinar Libero Sed Ac Lectus Etiam Laoreet Convallis Ullamcorper. Scelerisque Odio Erat Diam Sed. Malesuada Enim Elementum Ac In Tellus Eget Adipiscing. Urna Ipsum Nunc Porttitor Velit Ligula.
+                </p>
+                <a href="#" class="mt-6 inline-block bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-yellow-600">Consultation Now</a>
+              </div>
+            </div>
+          </div>
+          
     </section>
+    <!-- services -->
+    <section class=" py-16" style="background-color: #003366;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-24 text-white">
+                <!-- Stat 1 -->
+                <div class="flex items-center space-x-4">
+                    <img src="./assets/man.png" alt="Expert Worker" class="w-16 h-16">
+                    <div class="text-left">
+                        <h3 class="text-4xl font-bold">79+</h3>
+                        <p class="text-lg">Expert Worker</p>
+                    </div>
+                </div>
+                <!-- Stat 2 -->
+                <div class="flex items-center space-x-4">
+                    <img src="./assets/building.png" alt="Project Complete" class="w-16 h-16">
+                    <div class="text-left">
+                        <h3 class="text-4xl font-bold">24+</h3>
+                        <p class="text-lg">Project Complete</p>
+                    </div>
+                </div>
+                <!-- Stat 3 -->
+                <div class="flex items-center space-x-4">
+                    <img src="./assets/building1.png" alt="Running Project" class="w-16 h-16">
+                    <div class="text-left">
+                        <h3 class="text-4xl font-bold">120+</h3>
+                        <p class="text-lg">Running Project</p>
+                    </div>
+                </div>
+                <!-- Stat 4 -->
+                <div class="flex items-center space-x-4">
+                    <img src="./assets/rating.png" alt="Happy Clients" class="w-16 h-16">
+                    <div class="text-left">
+                        <h3 class="text-4xl font-bold">100+</h3>
+                        <p class="text-lg">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- testimonal section  -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Title Section -->
+          <h2 class="text-3xl font-bold mb-6 text-left">
+              100+ Clients Satisfied<br />
+              with Every Project<br />
+              We Execute!
+          </h2>
+      
+          <!-- Testimonials Section -->
+          <div class="flex justify-center space-x-8">
+              <!-- Testimonial 1 -->
+              <div class="bg-white shadow-md rounded-lg p-6 max-w-sm text-center flex flex-col items-center">
+                  <p class="text-black mb-4 text-center">Zeneli Group completely transformed our office space into a more vibrant one! The process was very smooth, and the results are amazing. We are very satisfied!</p>
+                  <div class="mt-4 flex items-center justify-center">
+                      <img src="./assets/user1.png" alt="Andi Rahman" class="w-13 h-13 rounded-full">
+                      <div class="ml-4 text-left">
+                          <h3 class="font-bold text-black ml-2">Andi Rahman</h3>
+                          <p class="text-black text-sm ml-2">Project Manager</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Testimonial 2 -->
+              <div class="bg-white shadow-md rounded-lg p-6 max-w-sm text-center flex flex-col items-center">
+                  <p class="text-black mb-4 text-center">I am very impressed with the professionalism of the Zeneli Group team. They restored my old house to its original condition with amazing details!</p>
+                  <div class="mt-4 flex items-center justify-center">
+                      <img src="./assets/user2.png" alt="Siti Nurhaliza" class="w-13 h-13 rounded-full">
+                      <div class="ml-4 text-left">
+                          <h3 class="font-bold text-black ml-2">Siti Nurhaliza</h3>
+                          <p class="text-black text-sm ml-2">Home Owner</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Testimonial 3 -->
+              <div class="bg-white shadow-md rounded-lg p-6 max-w-sm text-center flex flex-col items-center">
+                  <p class="text-black mb-4 text-center">The drywall installation by Zeneli Group was very quick and neat. Their service is highly skilled, and we couldn't be happier with the results.</p>
+                  <div class="mt-4 flex items-center justify-center">
+                      <img src="./assets/user3.png" alt="Budi Santoso" class="w-13 h-13 rounded-full">
+                      <div class=" text-left">
+                          <h3 class="font-bold text-black ml-2">Budi Santoso</h3>
+                          <p class="text-black text-sm ml-2">Architect</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Slider Section -->
+          <div class="mt-6 flex justify-center space-x-2">
+              <!-- Rectangle slider indicators -->
+              <div class="w-12 h-2 rounded-full" style="background-color: #003366;"></div>
+              <div class="w-12 h-2 bg-gray-400 rounded-full"></div>
+              <div class="w-12 h-2 bg-gray-400 rounded-full"></div>
+          </div>
+      </div>
+      
+      </section>
+  
   </div>
 
   <!-- Footer (Remains the Same) -->
-  <footer class="bg-blue-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Left Section: Logo and Description -->
-          <div class="flex flex-col items-center md:items-start space-y-4">
-              <img src="./assets/logo 1.png" alt="Zeneli Group Logo" class="mb-4">
-              <p class="text-center md:text-left">
+  <footer class="text-white py-6" style="background-color: #003366;">
+    <section class="text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Left Section: Logo and Description -->
+            <div class="col-span-1 flex flex-col items-center space-y-4">
+                <img src="./assets/logo 1.png" alt="Zeneli Group Logo" class=" mx-auto"> <!-- Added mx-auto -->
+                <p class="text-center"> <!-- Kept as text-center -->
                   Zeneli Group Ensures High-Quality Results And Timely Completion Of Projects, Guaranteeing Customer Satisfaction And Maintaining The Highest Standards In Every Project They Undertake.
-              </p>
-          </div>
-          <!-- Middle Section: Navigation Links -->
-          <div class="text-center md:text-left space-y-4">
-              <h3 class="font-semibold mb-2">More to Know</h3>
-              <ul class="space-y-2">
+                </p>
+              </div>
+              
+            
+            <!-- Right Section: More to Know and Company Info (aligned to the right side) -->
+            <div class="col-span-2 flex justify-end space-x-36">
+              <!-- More to Know Section -->
+              <div class="text-left space-y-4">
+                <h3 class="font-semibold mb-2">More to Know</h3>
+                <ul class="space-y-2">
                   <li><a href="#" class="hover:underline">Home</a></li>
                   <li><a href="#" class="hover:underline">About Us</a></li>
                   <li><a href="#" class="hover:underline">Service</a></li>
                   <li><a href="#" class="hover:underline">Portfolio</a></li>
-              </ul>
-          </div>
-          <!-- Right Section: Contact Information -->
-          <div class="text-center md:text-left space-y-4">
-              <h3 class="font-semibold mb-2">Company Info</h3>
-              <ul class="space-y-2">
+                </ul>
+              </div>
+      
+              <!-- Company Info Section -->
+              <div class="text-left space-y-4">
+                <h3 class="font-semibold mb-2">Company Info</h3>
+                <ul class="space-y-2">
                   <li>Zeneli Group</li>
-                  <li><a href="mailto:support@zeneligroup.com" class="hover:underline">Support@zeneligroup.com</a></li>
+                  <li><a href="mailto:support@zeneligroup.com" class="hover:underline">support@zeneligroup.com</a></li>
                   <li>+021 1234 7896</li>
                   <li>Company address details</li>
-              </ul>
+                </ul>
+              </div>
+            </div>
           </div>
-      </div>
-  </div>
+        </div>
+      </section>
+      
   
   </footer>
 
